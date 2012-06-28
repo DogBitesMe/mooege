@@ -209,16 +209,29 @@ namespace D3TypeDump
         #endregion
 
         #region build 10057 addresses
-        const int OpcodeSwitch_Address = 0x008E6240;
-        const int TypeDescriptorsAddress = 0x0159A19C;
+        //const int OpcodeSwitch_Address = 0x008E6240;        
+        //const int TypeDescriptorsAddress = 0x0159A19C;
+        //const int TypeDescriptorsOffset = 40;
+        //const int AttributesAddress = 0x0157D518;        
+        //const int AttributeCount = 826;
+        //const int Attribute_Int = 0x01373660;
+        //const int Attribute_IntMinMax = 0x01373668;
+        //const int Attribute_FloatMinMax = 0x01373670;
+        //const int Attribute_Float16 = 0x01373678;
+        //const int Attribute_Float16Or32 = 0x01373680;
+        #endregion
+
+        #region 100235 address
+        const int OpcodeSwitch_Address = 0x008F86D0;    //Ok
+        const int TypeDescriptorsAddress = 0x0159B194;  //Testing
         const int TypeDescriptorsOffset = 40;
-        const int AttributesAddress = 0x0157D518;
+        const int AttributesAddress = 0x0157E518;   //Testing
         const int AttributeCount = 826;
-        const int Attribute_Int = 0x01373660;
-        const int Attribute_IntMinMax = 0x01373668;
-        const int Attribute_FloatMinMax = 0x01373670;
-        const int Attribute_Float16 = 0x01373678;
-        const int Attribute_Float16Or32 = 0x01373680;
+        const int Attribute_Int = 0x01374F00;           //Addresses that diff by 8
+        const int Attribute_IntMinMax = 0x01374F08;
+        const int Attribute_FloatMinMax = 0x01374F10;   //Not suppose to appear
+        const int Attribute_Float16 = 0x01374F18;
+        const int Attribute_Float16Or32 = 0x01374F20;
         #endregion
 
         class GameMessageInfo
